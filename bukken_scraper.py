@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 import os
 import time
-
+　
 # ==== Selenium初期化設定（ヘッドレス対応） ====
 options = webdriver.ChromeOptions() 
 options.add_argument("--headless")             # ブラウザ非表示
@@ -97,4 +97,5 @@ pd.DataFrame(data_list, columns=columns).to_excel(csv_file, index=False)
 print(f"✅ 全{len(data_list)}件を {csv_file} に出力しました。")
 
 driver.quit()
+
 
