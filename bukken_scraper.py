@@ -21,7 +21,7 @@ driver.implicitly_wait(3)
 # 「借りる」＞「アパート・マンション」
 driver.find_element(By.CLASS_NAME, "rent_aptmsn").click()
 
-# 「沖縄県内の全市町村から探す」
+# 「エリア内の全市町村から探す」
 driver.find_element(By.CSS_SELECTOR, "#all-area-search > ul > li:nth-child(1) > a").click()
 
 # 「この条件で検索する」
@@ -97,3 +97,4 @@ pd.DataFrame(data_list, columns=columns).to_excel(csv_file, index=False)
 print(f"✅ 全{len(data_list)}件を {csv_file} に出力しました。")
 
 driver.quit()
+
